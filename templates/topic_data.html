@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            text-align: center;
+        }
+        .table
+        {
+            border: 5px;
+            background-color: aqua;
+            text-align: center;
+        }
+        tr
+        {
+            color: chartreuse;
+            background-color: red;
+
+        }
+        tr>th
+        {
+            padding: 10px;
+            color: chartreuse;
+        }
+        tr>td
+        {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Topic table full data</h1>
+    <table class="table" border="2px">
+        <tr>
+            <th>Topic names</th>
+        </tr>
+        {% for i in dt%}
+        <tr>
+            <td>{{i.Topic_name}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    </center>
+    
+</body>
+</html>
